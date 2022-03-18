@@ -3,6 +3,7 @@ Responsive payment portal with a minimalistic theme
 
 
 **File Descriptions**
+
 ``payment.html`` - Main file, double click to run.
 
 ``pay_style.css`` - CSS struct
