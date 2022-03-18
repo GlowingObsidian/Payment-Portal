@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pay_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="pay_script.js"></script>
+    <title>EzPay</title>
+</head>
+<body>
+    <div class="container">
+        <img src="logo.png" alt="">
+        <h2>Payment details</h2>
+        <form action="">
+            <p>
+                <input type="text" placeholder="John Doe" name="name" id="name" maxlength="30">
+            </p>
+            <p>
+                <input type="text" placeholder="1111-2222-3333-4444" name="cardno" id="cardno" maxlength="19" onkeypress="cardspace()">
+                <i id="cardicon" style="font-size:34px"></i>
+            </p>
+            <p class="float">
+                <input type="text" placeholder="MM/YY" name="expiry" id="expiry" maxlength="5" onkeypress="addSlash()">
+                <input type="password" placeholder="CVV" name="cvv" id="cvv" maxlength="3">
+            </p>
+            <p>
+                <input type="submit" name="submit" value="Pay Now" id="submit">
+            </p>
+        </form>
+    </div>
+    <div class="ver">EzPay v1.0</div>
+</body>
+</html>
